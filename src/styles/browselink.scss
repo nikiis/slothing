@@ -1,0 +1,18 @@
+@import './main';
+
+.clothesgrid-container{
+    a{
+        background-color: $blackish;
+        padding: 10px 30px;
+        color: white;
+        margin-top: 50px;
+        border-radius: 30px;
+        box-shadow: 3px 3px white;
+        transition: all 0.3s;
+    }
+
+    a:hover{
+        opacity: 0.5;
+    }
+}
+

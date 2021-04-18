@@ -1,0 +1,62 @@
+@import './main';
+
+$mutedpink: rgba(232, 63, 111, 0.65);
+$mutedyellow: #EFC465;
+$mutedblue: #94B7D3;
+
+
+
+.clothesgrid-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    transform: scale(0.8);
+
+
+    .item{
+        display: flex; 
+        align-items: center;
+
+
+        .item-text{
+            color: white;
+            text-align: center;
+
+            h2{
+                font-size: 3.5vw;
+            }
+
+            p{
+                // margin-bottom: 50px;
+                font-size: 2vw;
+                margin: 20px 20px 50px 20px;
+            }
+        }
+    }
+
+
+    .tops{
+        background-color: $green;
+    }
+
+    .jeans{
+        background-color: $mutedpink;
+
+        .item-pic{
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+    .dress{
+        background-color: $mutedyellow;
+    }
+
+    .lounge{
+        background-color: $mutedblue;
+
+        .item-pic{
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}

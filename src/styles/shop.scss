@@ -1,0 +1,51 @@
+@import './main';
+
+
+.shop-container{
+    // margin: 0 10%;
+
+    .shop-header{
+        display: flex;
+        position: relative;
+
+        .shop-header-background{
+            background-color: rgba(255, 191, 0, 0.35);
+            height: 55vh;
+            width: 100%;
+            z-index: -1;
+            position: absolute;
+            bottom:0;
+        }
+        .shop-header-text{
+            margin-left: 10%;
+            flex: 1;
+            align-self: center;
+
+
+            h1{
+                font-size: 6vw;
+                line-height: 115%;
+                width: 70%;
+                margin-bottom: 30px;
+            }
+
+            a{
+                color: white;
+                background-color: $pink;
+                padding: 10px 20px;
+                border-radius: 30px;
+                box-shadow: 3px 3px $green;
+            }
+        }
+        .shop-header-image{
+            flex: 1;
+            align-self: flex-end;
+            margin-right: 10%;
+            img{
+                width: 90%;
+            }
+        }
+
+    }
+
+}

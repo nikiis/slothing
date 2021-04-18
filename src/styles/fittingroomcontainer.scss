@@ -1,0 +1,87 @@
+@import './main';
+
+.fittingroom-container{
+    margin: 0 10%;
+    margin-top: 100px;
+
+    .fitting-header{
+        display: flex;
+        align-items: center;
+
+        .clothesrail-pic{
+            flex: 2;
+            margin-right: 10px;
+
+            img{
+                width: 90%;
+            }
+        }
+
+        .heading-text{
+            flex: 1;
+            text-align: left;
+
+            h1{
+                font-size: 6vw;
+                letter-spacing: 3px;
+                line-height: 130%;
+
+                span{
+                    color: $pink;
+                }
+            }
+        }
+    }
+
+    .about-vfm{
+        background-color: $green;
+        height: 70vh;
+        padding: 0 20px;
+        position: relative;
+        margin-bottom: 100px;
+
+        .vfm-text{
+            position: absolute;
+            top: -100px;
+        }
+
+        h2{
+            font-size: 5vw;
+
+            span{
+                color:white;
+            }
+        }
+
+        p{
+            color: white;
+            font-size: 2vw;
+            margin-top: 50px;
+            line-height: 144%;
+        }
+
+        .try-button{
+            display: flex;
+            margin-top: 100px;
+            justify-items: center;
+
+            a{
+                display: block;
+                margin: 0 auto;
+                background-color: $yellow;
+                color: black;
+                padding: 10px 30px;
+                border-radius: 30px;
+                box-shadow: 3px 3px $pink;
+                transition: all 0.3s;
+            }
+
+            a:hover{
+                background-color: $blackish;
+                color: white;
+            }
+        }
+
+    
+    }
+}

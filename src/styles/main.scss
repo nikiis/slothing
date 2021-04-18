@@ -1,0 +1,105 @@
+$headingfont: 'Barlow', sans-serif;
+$secondaryfont: 'Lato', sans-serif;
+$yellow: #FFBF00;
+$pink: #E83F6F;
+$green: #67CBA6;
+$blackish: #333333;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2{
+    font-family: $headingfont;
+}
+
+p, ul, a{
+    font-family: $secondaryfont;
+}
+
+hr{
+    background-color: $green;
+    opacity: 0.6;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 3px 3px 5px $green;
+    width: 40%;
+    height: 5px;
+    margin: 100px 0;
+
+}
+
+hr.right{
+    margin-left: auto;
+}
+
+hr.left{
+    margin-right: auto;
+}
+
+hr.center{
+    margin: 100px auto;
+}
+
+
+.navbar {
+
+    margin: 30px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    min-height: 8vh;
+
+    .logo{
+        display: flex;
+        align-items: center;
+
+        img{
+            max-width: 50px;
+        }
+
+        h1{
+            margin-left: 10px;
+            font-weight: 700;
+            letter-spacing: 3.5px;
+        }
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        width: 40%;
+        letter-spacing: 2px;
+
+        a{
+            color: black;
+            position: relative;
+            padding: 10px 0px;
+        }
+
+        a:after {    
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: $green;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+          }
+
+          a:hover:after { 
+            width: 100%; 
+            left: 0; 
+          }
+    }
+}

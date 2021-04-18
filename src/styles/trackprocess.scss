@@ -1,0 +1,41 @@
+@import './main';
+
+$process-background: rgba(232, 63, 111, 0.77);
+
+
+.process-container{
+    margin-top: 150px;
+
+    h2{
+        font-size: 5vw;
+        color: $blackish;
+    }
+    .process-info{
+        margin-top: -10px;
+        background-color: $process-background;
+        display: flex;
+        margin-bottom: 100px;
+        
+        .process-text{
+            margin: 30px 40px;
+            flex: 1;
+
+            p{
+                color: white;
+                font-size: 2vw;
+                line-height: 160%;
+                letter-spacing: 1.5px;
+            }
+        }
+
+        .process-img{
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+
+            img{
+                margin: 20px;
+            }
+        }
+    }
+}

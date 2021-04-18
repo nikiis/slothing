@@ -1,0 +1,130 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-family: "Barlow", sans-serif;
+}
+
+p, ul, a {
+  font-family: "Lato", sans-serif;
+}
+
+hr {
+  background-color: #67CBA6;
+  opacity: 0.6;
+  border: none;
+  border-radius: 30px;
+  -webkit-box-shadow: 3px 3px 5px #67CBA6;
+          box-shadow: 3px 3px 5px #67CBA6;
+  width: 40%;
+  height: 5px;
+  margin: 100px 0;
+}
+
+hr.right {
+  margin-left: auto;
+}
+
+hr.left {
+  margin-right: auto;
+}
+
+hr.center {
+  margin: 100px auto;
+}
+
+.navbar {
+  margin: 30px 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  min-height: 8vh;
+}
+
+.navbar .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .logo img {
+  max-width: 50px;
+}
+
+.navbar .logo h1 {
+  margin-left: 10px;
+  font-weight: 700;
+  letter-spacing: 3.5px;
+}
+
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 40%;
+  letter-spacing: 2px;
+}
+
+.navbar ul a {
+  color: black;
+  position: relative;
+  padding: 10px 0px;
+}
+
+.navbar ul a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #67CBA6;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.navbar ul a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.clothesgrid-container a {
+  background-color: #333333;
+  padding: 10px 30px;
+  color: white;
+  margin-top: 50px;
+  border-radius: 30px;
+  -webkit-box-shadow: 3px 3px white;
+          box-shadow: 3px 3px white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.clothesgrid-container a:hover {
+  opacity: 0.5;
+}
+/*# sourceMappingURL=browselink.css.map */
